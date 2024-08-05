@@ -1,0 +1,396 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+
+font-family: 'Roboto', sans-serif;
+	
+}
+
+.icone-cabecalho {
+
+	display: inline-block;
+}
+
+#camaro{
+	display: block;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(0,0,0,0.8);
+
+}
+
+
+.conteudo a:hover  {
+	text-decoration: underline;
+}
+
+
+.transparente a:hover  {
+	text-decoration: underline;
+}
+
+
+header {
+	
+	text-align: center;
+	background-color: rgba(256,256,256,0.7);
+	box-shadow: 1px 1px 10px black;
+	color: rgb(50,0,200);
+	text-shadow: 1px 1px 1px rgb(0,0,0, 0.3);
+	border-radius:10px;
+	width: 400px; 
+	margin: auto;
+}
+
+#aviso {
+
+	text-align: center;
+	background-color: rgba(256,256,256,0.7);
+	box-shadow: 1px 1px 10px black;
+	color: rgb(50,0,200);
+	text-shadow: 1px 1px 1px rgb(0,0,0, 0.3);
+	border-radius:10px;
+	width: 400px;
+	height:50px; 
+	margin: auto;
+	padding: 10px;
+
+}
+
+body {
+	background-color: gray;	
+	background-image: url("./background2.jpg");
+	
+}
+
+
+nav {
+	margin-rigth:0px;
+	margin-left:0px;
+	background-image: url("assets/externo.jpg");
+	background-size: cover;
+	box-shadow:inset 6px 6px 13px 0px rgba(0,0,0,0.473);
+	background-attachment: fixed; /* Faz o eveito parallax*/
+	background-position:center center;
+	padding: 0% 15%;
+
+}
+
+nav {
+	min-width: 520px;
+	max-width: 1050px;
+	font-weight: bold;
+	color: rgb(256,165,0);
+}
+
+nav figcaption {
+	color: rgb(256,165,0);
+	text-shadow: 1px 1px 1px rgb(255,255,255, 1);	
+}
+
+#contas {
+
+	text-align: center;
+
+}
+
+#m.o {
+	text-align: center;
+
+}
+
+#ipmaquina {
+	text-align: center;
+}
+
+
+h1 {
+
+	text-align: center;
+	color: rgb(255,130,0);
+	text-shadow: 1px 1px 1px rgb(0,0,0, 1);
+
+}
+
+
+p {
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+
+ul{
+	list-style-type:none;
+
+}
+
+
+.feito {
+	text-align: center;
+	text-decoration:line-through;
+	color: rgb(256,256,256);
+}
+
+
+
+h2 {
+	text-align:center; 
+	color: rgb(180,42,42);
+	text-shadow: 1px 1px 1px rgb(0,0,0, 1);
+
+}
+
+
+.conteudo {
+
+	min-width: 320px;
+	max-width: 800px;
+	margin: auto;
+	
+	background-color: white;
+	margin: auto; 
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 1px 1px 10px black;
+	text-align: center;
+}
+
+
+.transparente {
+
+	min-width: 320px;
+	max-width: 800px;
+	margin: auto;
+
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+
+}
+
+#imobilizados li {
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 1px 1px 1px rgb(255,130,1);
+}
+
+
+table {
+	margin: auto;
+	text-align: center;
+	border-collapse: collapse; 
+	border: 2px solid black;
+	box-shadow:6px 6px 13px 0px rgba(0,0,0,0.473);
+	width: 400px;
+}
+
+table caption {
+	font-style: italic;
+}
+
+
+th {
+	border: 1px solid black;
+	background-color:rgb(256,165,0);
+	color:white;
+	text-shadow: 1px 1px 1px rgb(0,0,0,1);
+	padding: 15px;
+	
+}
+
+.nome{
+	padding: 2px 30px 0px 20px;
+}
+
+td {
+	border: 1px solid black;
+	background-color:rgb(256,255,255, 0.7);
+}
+
+tbody > tr:nth-child(odd) { 
+	background-color: rgb(256,165,0, 0.7);
+}
+
+/* o "odd" (even é par) dentro do parenteses significa que as linhas impares receberam cores,
+outra possibilidade é colocar 2n, o que faz que a cor seja preenchida em 
+1 em 1 linhas*/
+
+.mapa {
+	color: rgb(256,165,0);
+	font-weight: bold;
+	width: 500px;
+	text-align: left;
+}
+
+.mapa caption {
+	color: rgb(0,0,0);
+
+}
+
+.number {
+	text-align: right;	
+}
+
+section#freio {
+	
+	background-image: url("assets/freio.jpg");
+	background-size: cover;
+	box-shadow:inset 6px 6px 13px 0px rgba(0,0,0,0.473);
+	background-attachment: fixed;
+	background-position:center center;
+	color: white;
+}
+
+
+section#freio > p {
+	padding: 30px;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgb(0,0,0,1);
+}
+
+section#freio a {
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgb(255,255,255,1);
+}
+
+section#freio img {
+	max-width: 550px;
+
+}
+
+
+#password > p {
+
+	display:none;
+}
+
+#password:hover > p {
+	
+	display:block;
+}
+
+
+.icone-cabecalho:hover img{
+	
+	position: relative;
+	margin: 2rem 1rem;
+	transform:scale(1.50, 1.50);
+	transition:0.3s;
+}
+
+.icone-cabecalho:hover figcaption{
+
+	position:relative;
+	transform: scale(1.25, 1.25);
+	transition:0,3s;
+	margin: auto;
+}
+
+.icone-cabecalho > a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+footer {
+
+	text-align: center;
+	background-color:rgba(50,50,50,0.5);
+	color: #ffffff;
+	border-radius:10px;
+
+}
+
+:root {
+	--laranja: rgb(256,165,0);
+	--azul: rgb(50,0,200);
+	--roxo: rgb(153,51,153);
+
+}
+
+
+
+.conteudo img {
+
+	max-width: 500px;
+
+}
+
+.transparente img {
+
+	max-width: 500px;
+
+}
+
+
+#linked {
+	
+	text-align: center;
+	background-color: rgba(256,256,256,0.7);
+	box-shadow: 1px 1px 10px black;
+	color: rgb(50,0,200);
+	text-shadow: 1px 1px 1px rgb(0,0,0, 0.3);
+	border-radius:10px;
+	width: 400px; 
+	margin: auto;
+}
+
+.icon {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  background-color: rgb(256,165,0);
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 50px;
+  height: 35px;
+}
+
+.icon .fab{
+  padding-top: 9px;
+}
+
+.icon:hover{
+  background-color: rgb(256,165,0);
+  box-shadow: 2px 2px 20px rgb(256,165,0);
+}
+
+#senhaform {
+	box-sizing: border-box;
+	width: 300px;
+	margin: auto;
+}
+
+#senhaform input {
+	display: block;
+	margin: 10px auto;
+	width: 250px;
+	height: 30px;
+}
+#telasenha {
+	
+}
+
+ .modelos {
+	display: block;
+	margin: auto;
+	padding: 10px;
+	font-size: 15pt;
+	width: 250px;
+}
+
+/* @media(min-width:150px) and (max-width: 550px) {
+	
+	body {
+	
+	display: flex;
+	width: 220px;	
+}
+
+}
