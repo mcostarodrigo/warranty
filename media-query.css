@@ -1,0 +1,35 @@
+﻿@charset "UTF-8";
+
+@media screen and (max-width: 800px) {
+
+
+	#camaro img {
+	
+	max-height: 450px;
+	text-align: center;
+
+	}
+
+	
+	nav figure {
+
+	width: 30px;
+	padding: 30px;
+
+
+	}
+
+	.short {
+	
+	margin: 30px;
+
+	
+	}
+
+
+	.short4 {
+	margin: 17px;
+
+	}
+
+}
