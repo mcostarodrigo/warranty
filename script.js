@@ -1,94 +1,40 @@
 let res = document.getElementById('res') 
 
-
-
 function cat(){
 
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.csv';  // Aceitar apenas arquivos CSV
-
-    // Define a função a ser chamada quando o arquivo for selecionado
-    input.addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        if (file) {
-            processoCSV(file)
-        }
-    });
-
-    input.click();
-
-}
-
-function processoCSV(file){
-    Papa.parse(file, {
-        header: true,
-        complete: function(results) {
-            VerificarSelecao(results.data);
-        },
-        error: function(error) {
-            console.error("Erro ao processar o arquivo CSV:", error);
-        }
-    });
-}
-
-function VerificarSelecao(lista){
-    let veiculo = document.getElementById('modelos').value
-    let pecas = document.getElementById('pecas').value
-
-    if (veiculo == 'onix' && pecas == 'pastilha'){
-        var peca = '45678908'
-        for(k in lista){
-            if(lista[k]['pecanumero'] == peca) {
-                MostrarInformacoes(peca, lista[k]['preco'], lista[k]['preco'])
-            }
-        }
-
-    }
-}
-
-function MostrarInformacoes(pecaGM_, precoGM_, precoAcdelco_){
     let veiculo = document.getElementById('modelos').value
     let pecas = document.getElementById('pecas').value
 
     if (veiculo.length == 0 || pecas.length == 0) {
         alert('Verifique os dados e tente novamente!')
     }
-    
     else if (veiculo == 'onix' && pecas == 'pastilha'){
-        pecaGM = pecaGM_
-        modelo = veiculo
-        precoGM = precoGM_
-        precoAcdelco = precoAcdelco_
-        modelo = veiculo
+        modelo = 'Onix'
+        precoGM = 'R$999'
+        precoAcdelco = 'R$199'
         pastilha()
     } else if (veiculo == 'tracker' && pecas == 'pastilha') {
-        peca = '12345678'
-        precoGM = '1200'
-        precoAcdelco = '200'
-        modelo = veiculo
+        precoGM = 'R$1200'
+        precoAcdelco = 'R200'
+        modelo = 'Tracker'
         pastilha()
     } else if (veiculo == 'tracker' && pecas == 'discos') {
-        peca = '12345678'
-        precoGM = '2000'
-        precoAcdelco = '600'
-        modelo = veiculo
+        precoGM = 'R$2000'
+        precoAcdelco = 'R$600'
+        modelo = 'Tracker'
         discos()
     } else if(veiculo == 'onix' && pecas == 'discos'){
-        peca = '12345678'
-        precoGM = '1999'
-        precoAcdelco = '799'
-        modelo = veiculo
+        precoGM = 'R$1999'
+        precoAcdelco = 'R$799'
+        modelo = 'onix'
         discos()
     } else if(veiculo == 'onix' && pecas == 'chaves'){
-        peca = '12345678'
-        modelo = veiculo
+        modelo = 'Onix'
         tresBotoes = '450'
         doisBotoes = '250'
         chaves()
     }
 }
-
 
 function pastilha() {
     res.innerHTML =
@@ -114,8 +60,8 @@ function pastilha() {
 			</thead>
 			<tbody>
 				<tr>
-					<td> ${precoGM} </td>
-					<td> ${precoAcdelco} </td>
+					<td> R$ ${precoGM} </td>
+					<td> R$ ${precoAcdelco} </td>
                     <td> R$ 120 </td>
 				</tr>
                 </table>
@@ -148,8 +94,8 @@ function discos (){
 			</thead>
 			<tbody>
 				<tr>
-					<td> ${precoGM} </td>
-					<td> ${precoAcdelco} </td>
+					<td> R$ ${precoGM} </td>
+					<td> R$ ${precoAcdelco} </td>
                     <td> R$ 180 </td>
 				</tr>
                 </table>
@@ -199,4 +145,3 @@ function chaves(){
 `
 
 }
-
