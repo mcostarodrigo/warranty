@@ -4,31 +4,32 @@ function cat(){
 
     let veiculo = document.getElementById('modelos').value
     let pecas = document.getElementById('pecas').value
+    let year = document.getElementById('year').value
 
-    if (veiculo.length == 0 || pecas.length == 0) {
+    if (veiculo.length == 0 || pecas.length == 0 || year.length == 0) {
         alert('Verifique os dados e tente novamente!')
     }
-    else if (veiculo == 'onix' && pecas == 'pastilha'){
+    else if (veiculo == 'onix' && pecas == 'pastilha' && year == '2020 - 2024'){
         modelo = 'Onix'
         precoGM = 'R$999'
         precoAcdelco = 'R$199'
         pastilha()
-    } else if (veiculo == 'tracker' && pecas == 'pastilha') {
+    } else if (veiculo == 'tracker' && pecas == 'pastilha' && year == '2020 - 2024') {
         precoGM = 'R$1200'
         precoAcdelco = 'R200'
         modelo = 'Tracker'
         pastilha()
-    } else if (veiculo == 'tracker' && pecas == 'discos') {
+    } else if (veiculo == 'tracker' && pecas == 'discos' && year == '2020 - 2024') {
         precoGM = 'R$2000'
         precoAcdelco = 'R$600'
         modelo = 'Tracker'
         discos()
-    } else if(veiculo == 'onix' && pecas == 'discos'){
+    } else if(veiculo == 'onix' && pecas == 'discos' && year == '2020 - 2024'){
         precoGM = 'R$1999'
         precoAcdelco = 'R$799'
         modelo = 'onix'
         discos()
-    } else if(veiculo == 'onix' && pecas == 'chaves'){
+    } else if(veiculo == 'onix' && pecas == 'chaves' && year == '2020 - 2024'){
         modelo = 'Onix'
         tresBotoes = '450'
         doisBotoes = '250'
