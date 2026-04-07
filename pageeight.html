@@ -1,0 +1,150 @@
+﻿ <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./traffic.png">
+	<title>warranty</title>
+	<link rel="stylesheet" href="./media-query.css">
+
+
+<body>
+
+
+	<header>
+		<ul>
+			<li> <a style="text-decoration: none;" href="./index.html" target="_self"> <b> Home </b> </a>
+		</ul>
+
+	</header>
+
+	<!--<figure id="camaro">
+		<a href="index.html" target="_self"> <img src="./camaro500.png" alt="Camaro"> </a>
+	</figure> --> 
+
+	    <div id="senhaform">
+        <form>
+            <h1>Localizar Peça </h1>
+		<p style="text-align: center;">Digite a palavra-chave para localizar o código da peça desejada. Após encontrar o item, pressione <strong> Enter </strong> ou utilize o botão <strong> Atualizar </strong> para retornar à tabela completa. Caso prefira, você pode continuar com novas palavras-chave.
+ </p>
+            <input type="busca" placeholder="Buscar Peça" id="txtBusca" >
+            <input type="submit" value="Atualizar">
+    </div>
+
+	
+	<h1>Tabela de Peças, Lubrificantes e Componentes</h1>
+	
+	<div id="dvTabela">
+		
+		<table>
+			<thead>
+				<tr>
+					<th> Descrição </th>
+					<th> Código </th>
+
+				</tr>
+
+			</thead>
+				<tbody id="tbody"></tbody>
+		</table>
+		
+	</div>
+
+	<script>
+
+		var tbody = document.getElementById("tbody");
+
+		var dados = [
+			["0W20", "G8550812"],
+			["5W30", "G8550168 // G8550862"],
+			["5W30 SEMI", "F8550860"],
+			["5W30 DIESEL ", "F8552923"],
+			["DOT4", "88902484"],                                                
+			["WD40 ", "OF010021"],
+			["SILICONE", "11244 "],
+			["MASTIQUE ", "98552043"],
+			[" JUNTA DO CARTER ", "93387883 / OF010187 / 98552043"],
+			["ADITIVO P/ COMB", "88905742 / 98550670 (Diesel)"],
+			["HIGIENIZAÇÃO (OXI)", "KPA00246"],
+			["AIR CLEANER ", "OF344"],
+			["GRAXA ", "OF010283"],
+			["OPTCLEAN ", "88906763"],
+			["ADITIVO RADIADOR", "93286309"],
+			["ADITIVO RAD. PRONTO ", "93344704 "],
+			[" VEDADOR BUJAO METAL ", "11023582"],
+			[" VEDADOR BUJAO BORRACHA ", "90528145"],
+			[" VEDADOR BUJAO TURBO", "12616850"],
+			["H27 W/2 ", "13590792 "],
+			["H4 AMARELA", "13503380"],
+			["H4 AZUL", "52020055"],
+			["H7 ", "11096251"],
+			["LAMPADA  PINGO (MEIALUZ) ", "13503422"],
+			["LAMPADA DOIS POLOS ", "26241944"],
+			["BATERIA CHAVE - PILHA", "12538938"],
+			["LAMPADA FREIO ONIX", ".13591405"],
+			["LAMPADA H7 AZUL", "93353987"],
+			["", ""],
+			["", ""],
+			["", ""],
+			["", ""],
+			["", ""],
+			["", ""],
+
+
+		];
+
+
+		for (var i = 0; i <dados.length; i++) {
+			var tr = "<tr>" + 
+				"<td>" + dados[i][0] + "</td>" +
+				"<td>" + dados[i][1] + "</td>" +
+				"</tr>";
+				tbody.innerHTML += tr;
+		}
+
+		document.getElementById("txtBusca").addEventListener("keydown", function(){
+			var busca = document.getElementById("txtBusca").value.toLowerCase();
+
+			for (var i = 0; i <tbody.childNodes.length; i++) {
+				var achou = false; 
+				var tr = tbody.childNodes[i];
+				var td = tr.childNodes;
+
+				for (var j = 0; j <td.length; j++) {
+					var value = td[j].childNodes[0].nodeValue.toLowerCase();
+					console.log(value);
+					if (value.indexOf(busca) >= 0) {
+						achou = true;
+					}
+
+				}
+
+				if(achou) {
+					tr.style.display = "table-row";
+				} else {
+					tr.style.display = "none";
+				}
+			}
+		});
+
+	</script>
+
+
+	<footer>
+		<ul>
+			<li><b>Desenvolvido por Rodrigo Costa</b>
+			<li> Curitiba - PR
+			<li> 2023
+
+		</ul>
+	</footer>
+
+	<script>
+
+	</script>
+
+</body>
+
+</html>
