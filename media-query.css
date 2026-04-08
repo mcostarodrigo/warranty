@@ -10,12 +10,14 @@
 
 	}
 
-	
+	#linked {
+    width: 90%; /* ocupa quase toda a tela */
+  }
+
 	nav figure {
 
 	width: 30px;
 	padding: 30px;
-
 
 	}
 

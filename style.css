@@ -323,6 +323,11 @@ footer {
 
 }
 
+.conteudo #link {
+  max-width: 200px;   /* largura máxima */
+  display: block;     /* importante se for <a> (link) */
+}
+
 .transparente img {
 
 	max-width: 500px;
