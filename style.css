@@ -388,7 +388,8 @@ footer {
 
 @media (max-width: 400px) {
     #camaro img {
-        width: 200px;
+        width: 90%;
+		 margin: auto;
     }
 }
 
