@@ -386,12 +386,11 @@ footer {
 }
 
 
-listaNFradio {
-	
-
-
+@media (max-width: 400px) {
+    #camaro {
+        width: 200px;
+    }
 }
-
 
 
 
