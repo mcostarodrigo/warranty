@@ -162,8 +162,15 @@
 
 <h1 id="oleo"> Troca de Óleo </h1>
 
+	    <div id="senhaform">
+        <form>
+
+            <input type="busca" placeholder="Buscar por modelo" id="txtBusca" >
+            <input type="submit" value="Atualizar">
+    </div>
 
 
+	<div id="dvTabela"> 
 		<table>
 			<caption style="text-align: center;"> <b> Lembre-se de escolher cuidadosamente o modelo e o ano do veículo para garantir 
 				que possamos fornecer um valor preciso. Sua atenção a esses detalhes nos ajudará a oferecer o melhor serviço possível. </br>  </b>
@@ -176,236 +183,88 @@
 					<th scope="col" class="nome"> PEÇAS ENVOLVIDAS </th>
 				</tr>
 			</thead>
-			<tbody>
-
-				<tr>
-					<td> MONTANA 2023 EM DIANTE  </br> <b> TURBO 3  CILINDROS </b>	 </td>
-					<td> R$299,00 </td>
-					<td> G8553886 <b> 5W30 </b> </br> 25206966 </br> 12616850</td>
-				</tr>
-
-				<tr>
-					<td> ONIX // TRACKER <b> TURBO 3  CILINDROS </b>	 </td>
-					<td> R$299,00 </td>
-					<td> G8553886 <b> 5W30 </b> </br> 25206966 </br> 12616850</td>
-				</tr>
-
-
-				<tr>
-					<td> ONIX // TRACKER <b> ASPIRADO 3  CILINDROS </b>	 </td>
-					<td> R$299,00 </td>
-					<td> 98553888 <b> 0W20 </b> </br> 25206966 </br> 12616850</td>
-				</tr>
-
-				<tr>
-					<td> ONIX <b>JOY </b> 2017 EM DIANTE	 </td>
-					<td> R$249,00 </td>
-					<td> F8550549 <b> 0W20 </b> </br> 88905845  </b> 11023589 </td>
-				</tr>
-
-				<tr>
-					<td> COBALT 2017 EM DIANTE	 </td>
-					<td> R$249,00 </td>
-					<td> F8550549 <b> 0W20 </b> </br> 88905845  </b> 90528145</td>
-				</tr>
-
-				<tr>
-					<td> SPIN 2017 EM DIANTE </td>
-					<td> R$249,00 </td>
-					<td> F8550549 <b> 0W20 </b> </br> 88905845 </b> 90528145 </td>
-				</tr>
-
-				<tr>
-					<td> MONTANA 2017 ATÉ 2021 </br> <b> MODELO ANTIGO </b>  </td>
-					<td> R$249,00 </td>
-					<td> F8550549 <b> 0W20 </b> </br> 88905845 </br> 11023589  </td> 
-				</tr>
-				<!-- <tr>
-					<td> TRACKER 1.4 2017/2017 </td>
-					<td> R$239,00 </td>
-					<td> F8550168 <b> 5W30 </b> </br> 25206966 </br>  </td> 
-				</tr> -->
-				<tr>
-					<td> CRUZE 2017 EM DIANTE </td>
-					<td> R$299,00 </td>
-					<td> F8550549 <b> 0W20 </b> </br> 25206966 </br> 12616850 </td> 
-				</tr>
-
-				<tr>
-					<td> TRACKER <b> 1.8 </b> 2014 ATÉ 2016 </td>
-					<td> R$299,00 </td>
-					<td> F8550168 <b> 5W30 </b> </br> .55594651 </br> 90528145 </td>
-				</tr>
-
-				<tr>
-					<td> CRUZE <b> 1.8 </b> 2012 A 2016	 </td>
-					<td> R$299,00 </td>
-					<td> G8550168 <b> 5W30 </b> </br> .55594651 </br> 90528145 </td>
-				</tr>
-
-				<tr>
-					<td> CELTA 2005 EM DIANTE 	 </td>
-					<td> R$189,00 </td>
-					<td> F8550168 <b> 5W30 </b> </br> 19347721 </br> 11023589 </td>
-				</tr>
-
-				<tr>
-					<td> AGILE 2010 EM DIANTE 	 </td>
-					<td> R$189,00 </td>
-					<td> F8550168 <b> 5W30 </b> </br> 19347721 </br> 11023589 </td>
-				</tr>	
-
-				<tr>
-					<td>  CORSA 2008 EM DIANTE 	 </td>
-					<td> R$189,00 </td>
-					<td> F8550168 <b> 5W30 </b> </br> 19347721 </br> 11023589 </td>
-				</tr>	
-				
-
-				<tr>
-					<td>  SPIN 2012 ATÉ 2016 </td>
-					<td> R$199,00 </td>
-					<td> F8550168 <b> 5W30</b> 88905845 </br> 90528145 </td> 
-				</tr>	
-
-				<tr>
-					<td>  COBALT 2011 ATÉ 2016  </td>
-					<td> R$199,00 </td>
-					<td> F8550168 <b> 5W30</b> 88905845 </br>  90528145 </br> </td>
+			<tbody id="tbody"> </tbody>
 			
-				</tr>	
-
-				<tr>
-					<td>  PRISMA 2008 ATÉ 2016   	 </td>
-					<td> R$199,00 </td>
-					<td> F8550168 <b> 5W30</b> 88905845 </br> <b> 1.0 </b> 11023589 </br> <b> 1.4 </b> 90528145 </td>
-				</tr>	
-
-				<tr>
-					<td>  MERIVA 2007 EM DIANTE </td>
-					<td> R$199,00  </td>
-					<td> F8550168 <b> 5W30 </b> </br> 88905845 </br> 90528145 </td>
-				</tr>	
-
-				<tr>
-					<td>  MONTANA 2005 ATÉ 2016 </td>
-					<td> R$199,00  </td>
-					<td> F8550168 <b> 5W30 </b> </br> 88905845 </br> 90528145 </td>
-				</tr>	
-
-				<tr>
-					<td>  ONIX 2013 ATÉ 2016 </td>
-					<td> R$199,00  </td>
-					<td> F8550168 <b> 5W30</b> 88905845 </br> <b> 1.0 </b> 11023589 </br> <b> 1.4 </b> 90528145 </td>
-				</tr>	
-
-				<tr>
-					<td>  VECTRA 2005 EM DIANTE </td>
-					<td> R$269,00 </td>
-					<td> F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845 </td> 
-				</tr>	
-
-				<tr>
-					<td>  ASTRA 2005 EM DIANTE </td>
-					<td> R$269,00 </td>
-					<td> F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845 </td> 
-				</tr>	
-
-				<tr>
-					<td>  ZAFIRA 2005 EM DIANTE  </td>
-					<td> R$269,00 </td>
-					<td> F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845 </td> 
-				</tr>	
-
-
-				<!-- <tr>
-					<td>  S10 FLEX 2.4 </td>
-					<td> R$299,00  </td>
-					<td> F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845 </td> -->
-				</tr>	
-
-				<tr>
-					<td>  CAPTIVA 2.4 (CONSULTAR DISPONIBILIDADE DO FILTRO) </td>
-					<td> R$389,00 </td>
-					<td> <b> 5x </b> F8550168 <b> 5W30 </b> </br> 12605565 </br> 12616850 </td>
-				</tr>	
-
-
-				<tr>
-					<td>  CAPTIVA V6 3.6 (CONSULTAR DISPONIBILIDADE DO FILTRO) 	 </td>
-					<td> R$439,00 </td>
-					<td> <b> 6x </b> F8550168  <b> 5W30 </b> </br> .19254710 </br> 12616850 </td>
-				</tr>	
-	
-				<tr>
-					<td> S10 2004 ATÉ 2011 FLEX </td>
-					<td> R$269,00 </td>
-					<td> <b> 5x </b> F8550168 <b> 5W30 </b> </br> 19347721 </td>
-				</tr>	
-
-				<tr>
-					<td>   S10 FLEX 2014 ATÉ 2022 </td>
-					<td> R$399,00 </td>
-					<td> <b> 5x </b> F8550549 <b> 0W20 </b> </br> 19347721 </br> 12616850 </td>
-				</tr>	
-				<tr>
-					<td>   S10 DIESEL 2011 </td>
-					<td> R$500,00 </td>
-					<td> <b> 5x </b> F8550159 <b> 15W40 </b> </br> 88902619 </td>
-				</tr>	
-
-				<tr>
-					<td>  S10 // TRAILBLAZER 2012 EM DIANTE DIESEL  </td>
-					<td> R$539,00 </td>
-					<td> 6x F8552923  <b> 5W30 </b> </br> 12616850 </br> .12636838 </td> 
-				</tr>	
-
-				<tr>
-					<td>   TRAILBLAZER <strong> V6 GASOLINA </strong> 2013 EM DIANTE </br> (CONSULTAR DISPONIBILIDADE DO FILTRO) </td>
-					<td> R$479,00 </td>
-					<td> 6x F8550168 <b> 5W30 </b> </br> .19355319 </br> 12616850 </td>
-				</tr>	
-
-				<tr>
-					<td> EQUINOX 2.0 ATÉ 2019 	 </td>
-					<td> R$359,00 </td>
-					<td> 6x F8550168 <b> 5W30 </b> </br> 25206966 </br> 12616850 </td> 
-	
-				</tr>	
-
-				<tr>
-					<td> EQUINOX 1.5 2020 EM DIANTE  </td>
-					<td> R$359,00 </td>
-					<td> <b> AWD </b> 5x F8550549 <b> 0W20 </b> </br> 25206966 </br> 12616850 </td> 
-				</tr>
-
-				<tr>
-					<td>   CAMARO ATÉ 2015 </td>
-					<td> R$549,00 </td>
-					<td> 8x F8550168 <b> 5W30 </b> </br> 25206966 </br> 12616850 </td> 
-				</tr>	
-
-				<tr>
-					<td>   CAMARO 2017 EM DIANTE </td>
-					<td> R$629,00 </td>
-					<td> 10x F8550168 <b> 5W30 </b> </br> 25206966 </br> 12616850 </td> 
-				</tr>	
-
-				<tr>
-					<td>   SILVERADO </td>
-					<td> R$629,00 </td>
-					<td> 8x F8550549 <b> 0W20 </b> </br> 12735811 </br> 12616850 </td> 
-				</tr>	
-
-				<tr>
-					<td>   SPARK </td>
-					<td> R$ </td>
-					<td> 8x F8550549 <b> 0W20 </b> </br> 12735811 </br> 12616850 </td> 
-				</tr>	
-
-			</tbody>
-
 		</table>
+
+		</div>
+
+			<script>
+
+		var tbody = document.getElementById("tbody");
+
+		var dados = [
+			["MONTANA 2023 EM DIANTE  </br> <b> TURBO 3  CILINDROS </b>	 ", "R$299,00", "G8553886 <b> 5W30 </b> </br> 25206966 </br> 12616850"],
+			["ONIX // TRACKER <b> TURBO 3  CILINDROS </b>", "R$299,00", "G8553886 <b> 5W30 </b> </br> 25206966 </br> 12616850"],
+			[" ONIX // TRACKER <b> ASPIRADO 3  CILINDROS </b>", "R$299,00 ", "98553888 <b> 0W20 </b> </br> 25206966 </br> 12616850"],
+			["ONIX <b>JOY </b> 2017 EM DIANTE", "R$249,00 ", "F8550549 <b> 0W20 </b> </br> 88905845  </b> 11023589"],
+			["COBALT 2017 EM DIANTE	", "R$249,00", " F8550549 <b> 0W20 </b> </br> 88905845  </b> 90528145"],
+			["SPIN 2017 EM DIANTE", "R$249,00", "F8550549 <b> 0W20 </b> </br> 88905845 </b> 90528145"],
+			["MONTANA 2017 ATÉ 2021 </br> <b> MODELO ANTIGO </b> ", "R$249,00", "F8550549 <b> 0W20 </b> </br> 88905845 </br> 11023589"],
+			["CRUZE 2017 EM DIANTE ", "R$299,00", "F8550549 <b> 0W20 </b> </br> 25206966 </br> 12616850"],
+			["TRACKER <b> 1.8 </b> 2014 ATÉ 2016 ", "R$299,00", "F8550168 <b> 5W30 </b> </br> .55594651 </br> 90528145"],
+			["CRUZE <b> 1.8 </b> 2012 A 2016", "R$299,00", "G8550168 <b> 5W30 </b> </br> .55594651 </br> 90528145 "],
+			["CELTA 2005 EM DIANTE", "R$189,00", " F8550168 <b> 5W30 </b> </br> 19347721 </br> 11023589"],
+			["AGILE 2010 EM DIANTE ", "R$189,00", "F8550168 <b> 5W30 </b> </br> 19347721 </br> 11023589 "],
+			[" CORSA 2008 EM DIANTE ", "R$189,00", "F8550168 <b> 5W30 </b> </br> 19347721 </br> 11023589"],
+			["SPIN 2012 ATÉ 2016", " R$199,00", "F8550168 <b> 5W30</b> 88905845 </br> 90528145"],
+			["COBALT 2011 ATÉ 2016 ", "R$199,00 ", "F8550168 <b> 5W30</b> 88905845 </br>  90528145 </br>"],
+			["PRISMA 2008 ATÉ 2016 ", "R$199,00", "F8550168 <b> 5W30</b> 88905845 </br> <b> 1.0 </b> 11023589 </br> <b> 1.4 </b> 90528145"],
+			["MERIVA 2007 EM DIANTE", "R$199,00", "F8550168 <b> 5W30 </b> </br> 88905845 </br> 90528145"],
+			["MONTANA 2005 ATÉ 2016 ", "R$199,00", "F8550168 <b> 5W30 </b> </br> 88905845 </br> 90528145"],
+			["ONIX 2013 ATÉ 2016", "R$199,00", "F8550168 <b> 5W30</b> 88905845 </br> <b> 1.0 </b> 11023589 </br> <b> 1.4 </b> 90528145"],
+			["VECTRA 2005 EM DIANTE", "R$269,00", "F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845"],
+			["ASTRA 2005 EM DIANTE", "R$269,00", "F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845"],
+			[" ZAFIRA 2005 EM DIANTE", "R$269,00", "F8550378 <b> 5W30 </b> </br> 90528145 </br> 88905845 "],
+			["CAPTIVA 2.4 (CONSULTAR DISPONIBILIDADE DO FILTRO)", "R$389,00", "<b> 5x </b> F8550168 <b> 5W30 </b> </br> 12605565 </br> 12616850"],
+			["CAPTIVA V6 3.6 (CONSULTAR DISPONIBILIDADE DO FILTRO)", "R$439,00", "<b> 6x </b> F8550168  <b> 5W30 </b> </br> .19254710 </br> 12616850 "],
+			["S10 2004 <b> ATÉ 2011 FLEX </b>", "R$269,00", "<b> 5x </b> F8550168 <b> 5W30 </b> </br> 19347721"],
+			["S10 <b> FLEX </b> 2014 ATÉ 2022", "R$399,00", "<b> 5x </b> F8550549 <b> 0W20 </b> </br> 19347721 </br> 12616850"],
+			["S10 DIESEL 2011", " R$500,00 ", "<b> 5x </b> F8550159 <b> 15W40 </b> </br> 88902619"],
+			["S10 // TRAILBLAZER 2012 EM DIANTE DIESEL", "R$539,00", "6x F8552923  <b> 5W30 </b> </br> 12616850 </br> .12636838"],
+			["TRAILBLAZER <strong> V6 GASOLINA </strong> 2013 EM DIANTE </br> (CONSULTAR DISPONIBILIDADE DO FILTRO)", "R$479,00", "6x F8550168 <b> 5W30 </b> </br> .19355319 </br> 12616850"],
+			["EQUINOX 2.0 ATÉ 2019", "R$359,00", " 6x F8550168 <b> 5W30 </b> </br> 25206966 </br> 12616850"],
+			["EQUINOX 1.5 2020 EM DIANTE ", "R$359,00", "<b> AWD </b> 5x F8550549 <b> 0W20 </b> </br> 25206966 </br> 12616850"],
+			["CAMARO ATÉ 2015", "R$549,00 ", "8x F8550168 <b> 5W30 </b> </br> 25206966 </br> 12616850"],
+			["CAMARO 2017 EM DIANTE", "R$629,00", "10x F8550168 <b> 5W30 </b> </br> 25206966 </br> 12616850"],
+			["SILVERADO", "R$629,00", "8x F8550549 <b> 0W20 </b> </br> 12735811 </br> 12616850"],
+			["", "", ""],
+			["", "", ""],
+
+		];
+				for (var i = 0; i <dados.length; i++) {
+			var tr = "<tr>" + 
+				"<td>" + dados[i][0] + "</td>" +
+				"<td>" + dados[i][1] + "</td>" +
+				"<td>" + dados[i][2] + "</td>" +
+				"</tr>";
+				tbody.innerHTML += tr;
+		}
+
+		
+		document.getElementById("txtBusca").addEventListener("input", function () {
+    	var busca = this.value.toLowerCase();
+
+ 	   var linhas = tbody.getElementsByTagName("tr");
+
+  		  for (var i = 0; i < linhas.length; i++) {
+        var tr = linhas[i];
+
+        // 👉 pega apenas a PRIMEIRA coluna
+        var primeiraColuna = tr.getElementsByTagName("td")[0];
+
+        var texto = primeiraColuna.innerText.toLowerCase();
+
+        if (texto.indexOf(busca) > -1) {
+            tr.style.display = "";
+        } else {
+            tr.style.display = "none";
+        }
+    }
+});
+
+			</script>	
+
 
 		<br/>
 		<br/>
