@@ -385,6 +385,13 @@ footer {
 	font-weight: bold;
 }
 
+/* TELAS PEQUENAS */
+@media (max-width: 600px) {
+    nav {
+        background-image: none; /* remove a imagem */
+        background-color: rgba(255,255,255,0.7); /* fica só a cor */
+    }
+}
 
 
 
