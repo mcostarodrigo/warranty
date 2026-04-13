@@ -385,6 +385,33 @@ footer {
 	font-weight: bold;
 }
 
+#buttonmail {
+	box-sizing: border-box;
+	width: 300px;
+	margin: auto; 
+}
+
+#buttonmail button {
+	display: block;
+	margin: 10px auto;
+	width: 250px;
+	height: 30px;
+	border: 2px solid rgb(180,42,42);
+	text-align: center;
+	color:rgb(180,42,42);
+	font-weight: bold;
+}
+
+#buttonmail a {
+
+	text-decoration: none;
+}
+
+#buttonmail a:hover {
+
+	color: rgb(180,42,42);
+}
+
 /* TELAS PEQUENAS */
 @media (max-width: 600px) {
     nav {
