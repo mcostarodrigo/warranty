@@ -7,7 +7,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .icone-cabecalho {
-
+	
 	display: inline-block;
 	box-sizing: border-box;
 }
@@ -71,6 +71,7 @@ body {
 
 
 nav {
+	
 	margin-rigth:0px;
 	margin-left:0px;
 	background-image: url("assets/externo.jpg");
