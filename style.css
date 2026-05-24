@@ -413,6 +413,11 @@ footer {
 	color: rgb(180,42,42);
 }
 
+input:focus {
+  border: 2px solid rgb(50,0,200);
+  outline: none;
+}
+
 /* TELAS PEQUENAS */
 @media (max-width: 600px) {
     nav {
