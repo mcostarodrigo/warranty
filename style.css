@@ -415,7 +415,7 @@ footer {
 
 input:focus {
   border: 2px solid rgb(50,0,200);
-  outline: none;
+  outline: 6px solid rgb(50,0,200);
 }
 
 /* TELAS PEQUENAS */
