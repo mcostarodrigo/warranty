@@ -1,0 +1,137 @@
+﻿ <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./traffic.png">
+	<title>warranty</title>
+	<link rel="stylesheet" href="./media-query.css">
+
+
+<body>
+
+
+	<header>
+		<ul>
+			<li> <a style="text-decoration: none;" href="./index.html" target="_self"> <b> Home </b> </a>
+		</ul>
+
+	</header>
+
+	<!--<figure id="camaro">
+		<a href="index.html" target="_self"> <img src="./camaro500.png" alt="Camaro"> </a>
+	</figure> --> 
+
+	    <div id="senhaform">
+        <form>
+            <h1> Conjunto Sem Débito </h1>
+		<p style="text-align: center;"> A tabela abaixo foi adicionada ao site em 07/09/2026 e pode não refletir as atualizações mais recentes. <br><br>
+
+Por isso, <strong> antes de utilizar as informações, recomendamos confirmar se elas ainda estão vigentes.</strong>  <br><br>
+
+Em caso de dúvida, consulte o setor de Garantia, que poderá verificar e fornecer as orientações atualizadas.
+
+ 		</p>
+            <input type="busca" placeholder="Nome da Peça" id="txtBusca" autofocus >
+            <input type="submit" value="Atualizar">
+    </div>
+	
+	<div id="dvTabela">
+		
+		<table>
+			<thead>
+				<tr>
+					<th> ITENS </th>
+					<th> MODELO </th>
+					<th> MÃO DE OBRA </th>
+
+				</tr>
+
+			</thead>
+				<tbody id="tbody"></tbody>
+		</table>
+		
+	</div>
+
+	<script>
+
+		var tbody = document.getElementById("tbody");
+
+		var dados = [
+
+			["Cabeçote do Motor", "Todos", "4061830"],
+			["Caixa de Direção e Kit do Motor da Direção (Mecânica, Hidráulica e Eletro Hidráulica)", "Todos", "7421740  7412100  7421770"],
+			["Caixa de Transferência (4x4)", "S10  Trailblazer", "8421160"],
+			["Eixo Traseiro (Completo)", "S10  Trailblazer", "3032360  3032400"],
+			["Motor Completo", "Todos", "4067490"],
+			["Motor Parcial", "Todos", "4067470"],
+			["Turbo Compressor", "Todos", "4068200"],
+			["Transmissão Automática ou Mecânica, carcaça ou miolo completo de transmissão", "Todos", "8464670 (Automática) <br>  8441780 (Mecânica) <br> 8443810 <br> 8468630"],
+			["Catalisador ou Coletor com Catalisador / Tubo de Escapamento com Catalisador", "Todos", "4050420 <br> 4050920 <br> 4052410 <br> 4051980 <br> 4050070"],
+			["Semi-Eixo / Kit Junta Homocinética", "Todos", "3040190 <br> 3040210 <br> 3041020 <br> 3041000"],
+			["Rádio / Módulo do Rádio HMI / Telas e Controles do Rádio", "Todos", "3420840 <br> 3421060 <br> 3420700 <br> 3430990 <br> 3423100"],
+			["Bateria de propulsão – veículos elétricos", "Elétricos", "5031030"],
+			["Eixo de Transmissão de Torque (Cardã) <strong> NOVO </strong> ", "Todos", "3020280 <br> 3020340"],
+			["Coluna de Direção", "Todos", "7441760"],
+			["Módulo de Controle do Motor (ECM)", "Todos", "4025390"],
+			["Módulo da Carroceria (BCM)", "Todos", "5410030"],
+
+
+		];
+
+
+		for (var i = 0; i <dados.length; i++) {
+			var tr = "<tr>" + 
+				"<td>" + dados[i][0] + "</td>" +
+				"<td>" + dados[i][1] + "</td>" +
+				"<td>" + dados[i][2] + "</td>" +
+				"</tr>";
+				tbody.innerHTML += tr;
+		}
+
+		document.getElementById("txtBusca").addEventListener("keydown", function(){
+			var busca = document.getElementById("txtBusca").value.toLowerCase();
+
+			for (var i = 0; i <tbody.childNodes.length; i++) {
+				var achou = false; 
+				var tr = tbody.childNodes[i];
+				var td = tr.childNodes;
+
+				for (var j = 0; j <td.length; j++) {
+					var value = td[j].childNodes[0].nodeValue.toLowerCase();
+					console.log(value);
+					if (value.indexOf(busca) >= 0) {
+						achou = true;
+					}
+
+				}
+
+				if(achou) {
+					tr.style.display = "table-row";
+				} else {
+					tr.style.display = "none";
+				}
+			}
+		});
+
+	</script>
+
+
+	<footer>
+		<ul>
+			<li><b>Desenvolvido por Rodrigo Costa</b>
+			<li> Curitiba - PR
+			<li> 2023
+
+		</ul>
+	</footer>
+
+	<script>
+
+	</script>
+
+</body>
+
+</html>
